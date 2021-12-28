@@ -7,3 +7,30 @@ body {
   font-family: $primary-font;
 }
 
+@mixin flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+// navbar
+nav {
+  .navbar {
+    @include flex;
+    .left ul {
+      @include flex();
+    }
+    .right ul {
+      @include flex();
+    }
+  }
+  .nav-menu {
+    .icon-hv {
+      display: none;
+    }
+    @include flex();
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+// end navbar

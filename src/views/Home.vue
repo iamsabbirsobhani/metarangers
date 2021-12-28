@@ -1,10 +1,9 @@
 <template>
-  <h1>Metarangers</h1>
-  <h1 class="text-3xl font-bold underline">Hello world!</h1>
+  <Navbar/>
 </template>
 
-<script>
-export default {};
+<script setup>
+  import Navbar from '../components/Navbar.vue'
 </script>
 
 <style></style>
