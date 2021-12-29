@@ -171,12 +171,12 @@
     </div>
   </nav>
 
-  <!-- <NavbarMob class="mobile-nav" /> -->
+  <NavbarMob class="mobile-nav" />
 </template>
 
 <script setup>
 import { ref } from "@vue/reactivity";
-// import NavbarMob from "../sub-components/NavbarMob.vue";
+import NavbarMob from "../sub-components/NavbarMob.vue";
 const off = ref(null);
 const on = ref(null);
 const dispOn = ref({ display: "block" });
@@ -212,9 +212,17 @@ const showOn = (key) => {
 
 <style lang="scss" scoped>
 nav {
-  height: 100px;
+  height: 110px;
   padding: 15px;
-  background-color: v-bind(col);
+  // background-color: v-bind(col);
+  background: rgb(15, 23, 42);
+  background: linear-gradient(
+    180deg,
+    rgba(15, 23, 42, 1) 0%,
+    rgba(15, 23, 42, 0.9108018207282913) 89%,
+    rgba(255, 255, 255, 1) 99%
+  );
+  background-repeat: no-repeat;
   color: #f1f5f9;
 }
 
