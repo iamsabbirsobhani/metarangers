@@ -180,14 +180,6 @@ nav {
     rgba(128, 128, 128, 1) 100%
   );
 }
-// button {
-//   z-index: 10;
-//   background-color: #e2e8f0;
-//   color: black;
-//   border-radius: 4px;
-//   width: 100px;
-//   height: 40px;
-// }
 
 .menu {
   position: fixed;
