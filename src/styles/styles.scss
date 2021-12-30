@@ -1,10 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@font-face {
+  font-family: "Upheaval TT -BRK-";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Upheaval TT -BRK-"),
+    url("../../public/upheavtt.woff") format("woff");
+}
 $primary-font: "Mulish", sans-serif;
+$pixel-font: "Upheaval TT -BRK-";
 body {
+  ::selection {
+    color: red;
+    background: yellow;
+  }
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: $primary-font;
+  background-color: #1e293b;
 }
 
 @mixin flex {
@@ -34,3 +47,12 @@ nav {
   }
 }
 // end navbar
+
+.super-airdrop {
+  font-family: $pixel-font;
+  // max-width: 1200px;
+  margin: 50px auto;
+  .fEZBZB {
+    font-family: $pixel-font;
+  }
+}

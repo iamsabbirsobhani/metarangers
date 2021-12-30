@@ -217,12 +217,19 @@ nav {
   height: 110px;
   padding: 15px;
   // background-color: v-bind(col);
-  background: rgb(15, 23, 42);
+  // background: rgb(15, 23, 42);
+  // background: linear-gradient(
+  //   180deg,
+  //   rgba(15, 23, 42, 1) 0%,
+  //   rgba(15, 23, 42, 0.9108018207282913) 89%,
+  //   rgba(255, 255, 255, 1) 99%
+  // );
+  background: rgb(41, 22, 81);
   background: linear-gradient(
     180deg,
-    rgba(15, 23, 42, 1) 0%,
-    rgba(15, 23, 42, 0.9108018207282913) 89%,
-    rgba(255, 255, 255, 1) 99%
+    rgba(41, 22, 81, 1) 0%,
+    rgba(15, 23, 42, 1) 92%,
+    rgba(25, 6, 39, 1) 100%
   );
   background-repeat: no-repeat;
   color: #f1f5f9;

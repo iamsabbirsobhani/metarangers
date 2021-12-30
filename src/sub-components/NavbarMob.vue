@@ -172,13 +172,27 @@ nav {
   padding: 15px;
   background-color: v-bind(col);
   color: #f1f5f9;
-  background: rgb(15, 23, 42);
+  // background: rgb(15, 23, 42);
+  // background: linear-gradient(
+  //   180deg,
+  //   rgba(15, 23, 42, 1) 0%,
+  //   rgba(15, 23, 42, 1) 93%,
+  //   rgba(128, 128, 128, 1) 100%
+  // );
+  background: rgb(41, 22, 81);
   background: linear-gradient(
     180deg,
-    rgba(15, 23, 42, 1) 0%,
-    rgba(15, 23, 42, 1) 93%,
-    rgba(128, 128, 128, 1) 100%
+    rgba(41, 22, 81, 1) 0%,
+    rgba(15, 23, 42, 1) 92%,
+    rgba(25, 6, 39, 1) 100%
   );
+}
+
+p {
+  font-size: 14px;
+}
+li img {
+  width: 50px;
 }
 
 .menu {
@@ -187,9 +201,9 @@ nav {
   left: 0;
   width: 100%;
   height: 100%;
-  padding-top: 80px;
-  background-color: rgba(128, 128, 128, 0.404);
-  z-index: -1;
+  padding-top: 40px;
+  background-color: #29165183;
+  z-index: 10;
 }
 
 .menu-two {
@@ -197,8 +211,8 @@ nav {
   top: 0;
   left: 0;
   right: 0;
-  padding-top: 80px;
-  z-index: -1;
+  padding-top: 40px;
+  z-index: 10;
   display: v-bind(disp);
 }
 
@@ -208,11 +222,11 @@ nav {
   text-align: center;
   position: relative;
   display: block;
-  height: 540px;
-  width: 340px;
-  padding: 15px;
+  height: 600px;
+  // width: 350px;
+  // padding: 15px;
   transition: all 0.3s ease-in-out 0s;
-  background-image: url("../assets/navbar/navpopup.svg");
+  background-image: url("../assets/navbar/navmobbg.svg");
   overflow-x: scroll;
   background-size: 100% 103%;
   background-repeat: no-repeat;
@@ -245,9 +259,9 @@ nav {
   display: block;
   height: 530px;
   width: 340px;
-  padding: 15px;
+  // padding: 15px;
   transition: all 0.3s ease-in-out 0s;
-  background-image: url("../assets/navbar/navpopup.svg");
+  background-image: url("../assets/navbar/navmobbg.svg");
   overflow-x: scroll;
   background-size: 100% 103%;
   background-repeat: no-repeat;
@@ -259,7 +273,7 @@ nav {
 }
 
 li {
-  margin: 2px 0;
+  margin: 4.2px 0;
 }
 .turn-back::-webkit-scrollbar {
   display: block;
