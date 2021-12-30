@@ -1,7 +1,20 @@
 <template>
   <div>
     <nav class="mob-nav mb-4">
-      <button @click="showMenu">Button</button>
+      <div>&nbsp;</div>
+      <div>
+        <img
+          class="w-28"
+          src="../assets/navbar/navlogo.png"
+          alt="Metarangers"
+        />
+      </div>
+      <button v-if="!bool" @click="showMenu">
+        <img class="w-8" src="../assets/navbar/navbtnOpen.png" alt="" />
+      </button>
+      <button v-else @click="showMenu">
+        <img class="w-8" src="../assets/navbar/navbtnClose.png" alt="" />
+      </button>
     </nav>
     <div
       :style="closeNavMenu"
@@ -152,19 +165,29 @@ const showMenu = (e) => {
 
 <style lang="scss" scoped>
 nav {
-  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 62px;
   padding: 15px;
   background-color: v-bind(col);
   color: #f1f5f9;
+  background: rgb(15, 23, 42);
+  background: linear-gradient(
+    180deg,
+    rgba(15, 23, 42, 1) 0%,
+    rgba(15, 23, 42, 1) 93%,
+    rgba(128, 128, 128, 1) 100%
+  );
 }
-button {
-  z-index: 10;
-  background-color: #e2e8f0;
-  color: black;
-  border-radius: 4px;
-  width: 100px;
-  height: 40px;
-}
+// button {
+//   z-index: 10;
+//   background-color: #e2e8f0;
+//   color: black;
+//   border-radius: 4px;
+//   width: 100px;
+//   height: 40px;
+// }
 
 .menu {
   position: fixed;
@@ -172,7 +195,7 @@ button {
   left: 0;
   width: 100%;
   height: 100%;
-  padding-top: 110px;
+  padding-top: 80px;
   background-color: rgba(128, 128, 128, 0.404);
   z-index: -1;
 }
@@ -182,7 +205,7 @@ button {
   top: 0;
   left: 0;
   right: 0;
-  padding-top: 110px;
+  padding-top: 80px;
   z-index: -1;
   display: v-bind(disp);
 }
@@ -317,5 +340,9 @@ li {
 
 .menu-item .header-button:hover {
   background-image: url("../assets/button/buttonbghover.png");
+}
+
+button {
+  float: right;
 }
 </style>

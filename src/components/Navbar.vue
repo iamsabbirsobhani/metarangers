@@ -108,7 +108,9 @@
           </li>
         </ul>
       </div>
-      <div class="middle">Metarangers</div>
+      <div class="middle">
+        <img class="w-40" src="../assets/navbar/navlogo.png" alt="" />
+      </div>
       <div class="right">
         <ul>
           <li>
