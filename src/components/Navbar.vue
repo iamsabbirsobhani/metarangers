@@ -178,6 +178,7 @@
 
 <script setup>
 import { ref } from "@vue/reactivity";
+import { onMounted } from "@vue/runtime-core";
 import NavbarMob from "../sub-components/NavbarMob.vue";
 const off = ref(null);
 const on = ref(null);
@@ -210,6 +211,15 @@ const showOn = (key) => {
     textShadow.value = "";
   }
 };
+
+onMounted(() => {
+  var meta = document.createElement("meta");
+  meta.name = "theme-color";
+  document.getElementsByTagName("head")[0].appendChild(meta);
+  document
+    .querySelector('meta[name="theme-color"]')
+    .setAttribute("content", "#291651");
+});
 </script>
 
 <style lang="scss" scoped>

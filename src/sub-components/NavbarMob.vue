@@ -125,6 +125,7 @@
 
 <script setup>
 import { ref } from "@vue/reactivity";
+import { onMounted } from "@vue/runtime-core";
 const col = ref("#1e293b");
 const closeNavMenu = ref({ display: "none" });
 const bool = ref(false);
@@ -161,6 +162,14 @@ const showMenu = (e) => {
     }, 380);
   }
 };
+onMounted(() => {
+  var meta = document.createElement("meta");
+  meta.name = "theme-color";
+  document.getElementsByTagName("head")[0].appendChild(meta);
+  document
+    .querySelector('meta[name="theme-color"]')
+    .setAttribute("content", "#291651");
+});
 </script>
 
 <style lang="scss" scoped>
