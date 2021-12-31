@@ -132,14 +132,12 @@ const bool = ref(false);
 const disp = ref();
 disp.value = "block";
 const closeMenu = (e) => {
-  console.log(e.target.classList[0]);
   if (e.target.classList[0] == "menu") {
     setTimeout(() => {
       closeNavMenu.value = {
         display: "none",
       };
       disp.value = "none";
-      console.log(disp.value);
     }, 380);
     bool.value = false;
   }
@@ -147,7 +145,6 @@ const closeMenu = (e) => {
 const showMenu = (e) => {
   bool.value = !bool.value;
   disp.value = "block";
-  console.log(bool.value);
   if (bool.value) {
     closeNavMenu.value = {
       display: "block",
@@ -158,7 +155,6 @@ const showMenu = (e) => {
         display: "none",
       };
       disp.value = "none";
-      console.log(disp.value);
     }, 380);
   }
 };

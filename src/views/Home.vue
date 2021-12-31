@@ -2,7 +2,7 @@
   <Navbar />
   <div class="home">
     <SuperAirdrop />
-    <TheParallel/>
+    <TheParallel />
   </div>
 </template>
 
@@ -20,7 +20,7 @@ import TheParallel from "../components/TheParallel.vue";
   content: "";
   background-image: url("../assets/super-airdrop/bg-airdrope.png");
   width: 100%;
-  height: 150%;
+  height: 500%;
   background-size: 100%;
   z-index: -2;
   position: absolute;

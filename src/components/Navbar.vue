@@ -189,7 +189,6 @@ const col = ref("#1e293b");
 let keys = ref();
 const showOff = (key) => {
   keys.value = key;
-  console.log(keys.value);
   off.value = {
     display: "none",
   };
