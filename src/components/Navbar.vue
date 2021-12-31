@@ -213,7 +213,7 @@ const showOn = (key) => {
 };
 
 onMounted(() => {
-  var meta = document.createElement("meta");
+  let meta = document.createElement("meta");
   meta.name = "theme-color";
   document.getElementsByTagName("head")[0].appendChild(meta);
   document

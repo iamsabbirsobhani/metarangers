@@ -1,5 +1,6 @@
 <template>
   <div class="super-airdrop">
+    <img class="bg-rectangle" src="../assets/super-airdrop/bg-rectangle-1.png" alt="">
     <div class="img-super-airdrop">
       <img src="../assets/super-airdrop/superAirdrop.png" alt="" />
       <p class="text-center text-white my-5 text-lg">
@@ -72,32 +73,15 @@
 $pixel-font: "Upheaval TT -BRK-";
 
 .super-airdrop {
+  position: relative;
   img {
     margin: auto;
   }
 }
-.super-airdrop::before {
-  content: "";
-  background-image: url("../assets/super-airdrop/bg-airdrope.png");
-  width: 100%;
-  height: 100%;
-  background-size: 100% 100%;
-  z-index: -2;
+.bg-rectangle {
   position: absolute;
-  top: 340px;
-  left: 0px;
-}
-.super-airdrop::after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  background-image: url("../assets/super-airdrop/bg-desktop.webp");
-  background-repeat: no-repeat;
-  background-size: 100% 35%;
-  z-index: -2;
-  position: absolute;
-  top: 130px;
-  left: 0px;
+  top: 50px;
+  z-index: -1;
 }
 .img-super-airdrop {
   position: relative;
