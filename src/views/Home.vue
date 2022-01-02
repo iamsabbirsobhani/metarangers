@@ -4,6 +4,7 @@
     <SuperAirdrop />
     <TheParallel />
     <FoundationGame />
+    <CasualGames />
   </div>
 </template>
 
@@ -12,6 +13,7 @@ import Navbar from "../components/Navbar.vue";
 import SuperAirdrop from "../components/SuperAirdrop.vue";
 import TheParallel from "../components/TheParallel.vue";
 import FoundationGame from "../components/FoundationGame.vue";
+import CasualGames from "../components/CasualGames.vue";
 </script>
 
 <style lang="scss" scoped>
