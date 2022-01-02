@@ -3,6 +3,7 @@
   <div class="home">
     <SuperAirdrop />
     <TheParallel />
+    <FoundationGame />
   </div>
 </template>
 
@@ -10,6 +11,7 @@
 import Navbar from "../components/Navbar.vue";
 import SuperAirdrop from "../components/SuperAirdrop.vue";
 import TheParallel from "../components/TheParallel.vue";
+import FoundationGame from "../components/FoundationGame.vue";
 </script>
 
 <style lang="scss" scoped>
@@ -38,5 +40,19 @@ import TheParallel from "../components/TheParallel.vue";
   position: absolute;
   top: 130px;
   left: 0px;
+}
+
+@media (max-width: 768px) {
+  .home::before {
+    content: "";
+    background-image: url("../assets/super-airdrop/bg-airdrope.png");
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+    z-index: -2;
+    position: absolute;
+    top: 340px;
+    left: 0px;
+  }
 }
 </style>
