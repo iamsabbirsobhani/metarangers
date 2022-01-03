@@ -5,6 +5,8 @@
     <TheParallel />
     <FoundationGame />
     <CasualGames />
+    <Backers />
+    <Advisor />
   </div>
 </template>
 
@@ -14,6 +16,8 @@ import SuperAirdrop from "../components/SuperAirdrop.vue";
 import TheParallel from "../components/TheParallel.vue";
 import FoundationGame from "../components/FoundationGame.vue";
 import CasualGames from "../components/CasualGames.vue";
+import Backers from "../components/Backers.vue";
+import Advisor from "../components/Advisor.vue";
 </script>
 
 <style lang="scss" scoped>
@@ -24,11 +28,11 @@ import CasualGames from "../components/CasualGames.vue";
   content: "";
   background-image: url("../assets/super-airdrop/bg-airdrope.png");
   width: 100%;
-  height: 500%;
+  height: 1000%;
   background-size: 100%;
   z-index: -2;
   position: absolute;
-  top: 340px;
+  top: 400px;
   left: 0px;
 }
 .home::after {

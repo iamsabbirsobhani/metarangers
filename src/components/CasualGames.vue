@@ -171,6 +171,11 @@ $pixel-font: "Upheaval TT -BRK-";
     max-width: 350px;
     margin: auto;
   }
+  .bottom {
+    position: relative;
+    top: unset;
+    z-index: 1;
+  }
   .container-wrapper {
     flex-direction: column;
   }
