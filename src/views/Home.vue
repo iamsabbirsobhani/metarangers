@@ -7,6 +7,7 @@
     <CasualGames />
     <Backers />
     <Advisor />
+    <Team />
   </div>
 </template>
 
@@ -18,6 +19,7 @@ import FoundationGame from "../components/FoundationGame.vue";
 import CasualGames from "../components/CasualGames.vue";
 import Backers from "../components/Backers.vue";
 import Advisor from "../components/Advisor.vue";
+import Team from "../components/Team.vue";
 </script>
 
 <style lang="scss" scoped>

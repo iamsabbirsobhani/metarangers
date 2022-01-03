@@ -23,14 +23,8 @@
 <script setup></script>
 
 <style lang="scss" scoped>
-@font-face {
-  font-family: "Upheaval TT -BRK-";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Upheaval TT -BRK-"),
-    url("../../public/upheavtt.woff") format("woff");
-}
-$pixel-font: "Upheaval TT -BRK-";
+@import "../styles/_variables.scss";
+
 .the-parallel {
   display: flex;
   justify-content: space-around;
