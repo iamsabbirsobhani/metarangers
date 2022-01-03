@@ -1,6 +1,10 @@
 <template>
   <div class="super-airdrop">
-    <img class="bg-rectangle" src="../assets/super-airdrop/bg-rectangle-1.png" alt="">
+    <img
+      class="bg-rectangle"
+      src="../assets/super-airdrop/bg-rectangle-1.png"
+      alt=""
+    />
     <div class="img-super-airdrop">
       <img src="../assets/super-airdrop/superAirdrop.png" alt="" />
       <p class="text-center text-white my-5 text-lg">
@@ -65,9 +69,9 @@
 <style lang="scss" scoped>
 @import "../styles/_variables.scss";
 
-
 .super-airdrop {
   position: relative;
+  z-index: 1;
   img {
     margin: auto;
   }

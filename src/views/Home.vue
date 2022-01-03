@@ -1,5 +1,6 @@
 <template>
   <Navbar />
+  <FrontPage/>
   <div class="home">
     <SuperAirdrop />
     <TheParallel />
@@ -8,6 +9,8 @@
     <Backers />
     <Advisor />
     <Team />
+    <FooterBg />
+    <Footer/>
   </div>
 </template>
 
@@ -20,6 +23,9 @@ import CasualGames from "../components/CasualGames.vue";
 import Backers from "../components/Backers.vue";
 import Advisor from "../components/Advisor.vue";
 import Team from "../components/Team.vue";
+import FooterBg from "../components/FooterBg.vue";
+import Footer from "../components/Footer.vue";
+import FrontPage from "../components/FrontPage.vue";
 </script>
 
 <style lang="scss" scoped>
@@ -34,7 +40,7 @@ import Team from "../components/Team.vue";
   background-size: 100%;
   z-index: -2;
   position: absolute;
-  top: 400px;
+  top: 1000px;
   left: 0px;
 }
 .home::after {
@@ -44,9 +50,9 @@ import Team from "../components/Team.vue";
   background-image: url("../assets/super-airdrop/bg-desktop.webp");
   background-repeat: no-repeat;
   background-size: 100% 35%;
-  z-index: -2;
+  z-index: 0;
   position: absolute;
-  top: 130px;
+  top: 872px;
   left: 0px;
 }
 
@@ -59,7 +65,7 @@ import Team from "../components/Team.vue";
     background-size: 100%;
     z-index: -2;
     position: absolute;
-    top: 340px;
+    top: 900px;
     left: 0px;
   }
 }
